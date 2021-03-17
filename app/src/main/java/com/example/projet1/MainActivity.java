@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         zoneValeur = (EditText) findViewById(R.id.editTxtValeur);
 
         Button btnQuitter = (Button) findViewById(R.id.btnQuitter);
@@ -140,7 +141,7 @@ protected void onStop() {
         }
 
     };
-    //fonction qui récupère 
+    //fonction qui récupère
     public String getTxtValeur() {
         return zoneValeur.getText().toString();
     }
